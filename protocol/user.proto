@@ -1,0 +1,13 @@
+package protocol;
+
+message Info {
+    required string name = 1;
+    optional int32 age = 2;
+}
+
+message User {
+    required string password = 1;
+    required int64 time = 2;
+    required bool isNice = 3;
+    required Info info = 4;
+}
